@@ -48,7 +48,7 @@ const Login = (props) => {
           </View>
         </View>
       </View>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => props.navigation.navigate("History")}>
 
       <View style={{height:height*0.1,width:width*0.9, alignSelf:'center'}}>
 <Text style={{color : "#F26837",textAlign:'right', fontStyle:'italic'}}>

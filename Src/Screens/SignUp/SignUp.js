@@ -84,7 +84,7 @@ const SignUp = props => {
 <TouchableOpacity onPress={() => props.navigation.navigate("Login")}> 
 <View style={{height:height*0.06, width:width*0.9, alignSelf:'center', justifyContent:'center', backgroundColor:'#F26837', borderRadius:4,}}>
    <Text style={{textAlign:'center', color:'white',fontWeight:'bold'}}>
-        Login
+        SignUp
     </Text>
 </View>
    </TouchableOpacity>

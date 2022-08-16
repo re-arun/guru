@@ -7,6 +7,7 @@ import Slogin1 from './Src/Screens/SocialLogin/Slogin1';
 import Slogin2 from './Src/Screens/SocialLogin/Slogin2';
 import Login from './Src/Screens/Login/Login';
 import SignUp from './Src/Screens/SignUp/SignUp';
+import History from './Src/Screens/History.js/History';
 function HomeScreen(props) {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -29,6 +30,7 @@ function App(props) {
         <Stack.Screen name="Slogin2" component={Slogin2} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="History" component={History} />
       </Stack.Navigator>
     </NavigationContainer>
   );
