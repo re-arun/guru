@@ -3,13 +3,13 @@ import React, { useEffect } from 'react'
 
 const {height,width} = Dimensions.get("screen");
 
-const Splash = ({navigation}) => {
+const Splash = (props) => {
     useEffect(() => {
         setTimeout(() => {
-            navigation.navigate('Onboard');
-        },3000);
+            props.navigation.navigate('Slogin1');
+        },300000);
         
-        // BackHandler.addEventListener("hardwareBackPress",bac);
+       
         
 
       
@@ -21,7 +21,7 @@ const Splash = ({navigation}) => {
   return (
     <SafeAreaView>
       <View style={styles.MainView}>
-        <TouchableOpacity style={styles.TrTouchable} onPress={() => navigation.navigate("Home")}>
+        <TouchableOpacity style={styles.TrTouchable} onPress={() => props.navigation.navigate("Slogin1")}>
           <Image source={require('../../Images/Splash/Splash.png')} style={styles.TrImg} />
         </TouchableOpacity>
       </View>
@@ -40,14 +40,14 @@ const styles = StyleSheet.create({
       alignItems:"center",
   },
   TrTouchable:{
-      height:height*0.7,
+      height:height*0.5,
       width:width*0.85,
       justifyContent:"center",
       alignItems:"center",
     //   backgroundColor:"red"
   },
   TrImg:{
-      height:height*1,
-      width:width*1,
+      height:height*0.6,
+      width:width*0.7,
   }
 });
