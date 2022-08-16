@@ -12,14 +12,14 @@ const Slogin1 = (props) => {
  </View>
  <View style={{height:height*0.1, width:width*1, }}>
  
-   <TouchableOpacity>
+   <TouchableOpacity onPress={() => props.navigation.navigate("Login")}> 
 <View style={{height:height*0.06, width:width*0.5, alignSelf:'center', justifyContent:'center', backgroundColor:'#F26837', borderRadius:4,}}>
    <Text style={{textAlign:'center', color:'white',fontWeight:'bold'}}>
         Login
     </Text>
 </View>
    </TouchableOpacity>
-<TouchableOpacity>
+<TouchableOpacity onPress={() => props.navigation.navigate("SignUp")}>
 <View style={{height:height*0.06, width:width*0.5, alignSelf:'center', justifyContent:'center', backgroundColor:'#F26837', borderRadius:4,top:15}}>
     <Text style={{textAlign:'center', color:"white",fontWeight:'bold'}}>
        Sign Up
